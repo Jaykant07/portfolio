@@ -12,10 +12,18 @@ function Navbar() {
         <img src={logo} alt="logo" />
       </div>
       <div className="mt-4 sm:mt-7 flex gap-2 sm:gap-4 justify-center items-center text-2xl sm:text-3xl">
-        <a href="https://www.linkedin.com/in/jaykant-demgunde/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/jaykant-demgunde/"
+          target="_blank"
+          className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-6px] after:w-0 after:h-[2px] after:bg-blue-400 hover:after:w-full after:transition-all after:duration-300 "
+        >
           <FaLinkedin />
         </a>
-        <a href="https://github.com/Jaykant07" target="_blank">
+        <a
+          href="https://github.com/Jaykant07"
+          target="_blank"
+          className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-6px] after:w-0 after:h-[2px] after:bg-blue-400 hover:after:w-full after:transition-all after:duration-300 "
+        >
           <FaGithub />
         </a>
         {/* <FaInstagram />

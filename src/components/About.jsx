@@ -14,10 +14,14 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2 lg:p-8"
+          className="w-full lg:w-1/2 p-4 lg:p-8"
         >
-          <div className="flex items-center justify-center">
-            <img className="rounded-3xl" src={aboutImg} alt="about" />
+          <div className="flex items-center justify-center ">
+            <img
+              className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-full max-w-[400px] rounded-3xl object-cover"
+              src={aboutImg}
+              alt="about"
+            />
           </div>
         </motion.div>
         <motion.div
