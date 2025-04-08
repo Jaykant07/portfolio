@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
-import project4 from "../assets/projects/project4.jpg";
+import project4 from "../assets/projects/project4.png";
 
 export const HERO_CONTENT = `I am a passionate Full Stack Developer with a strong focus on building scalable and secure web applications. With expertise in JavaScript, React, and Next.js on the front end, and Node.js, MySQL, and MongoDB on the back end, I thrive on creating seamless and efficient user experiences.
 Beyond web development, I’ve built browser extensions like a customizable clock for Chrome and a password manager with encryption functionality, showcasing my ability to develop innovative and practical solutions. My goal is to keep refining my skills, optimize performance, and develop tools that enhance productivity and security.`;
@@ -32,7 +32,7 @@ export const PROJECTS = [
     title: "Portfolio",
     image: project1,
     description:
-      "Welcome to my professional portfolio showcasing my work as a developer. This carefully curated collection demonstrates my technical capabilities, problem-solving approach, and project experience.",
+      "You're looking at it! This portfolio was crafted to reflect my skills as a developer — combining clean design, responsive layout, and smooth animations. Built with React, TailwindCSS, and Framer Motion, it serves as both a project showcase and a reflection of my development style.",
     technologies: [
       "React.js",
       "Framer_Motion",
@@ -62,6 +62,7 @@ export const PROJECTS = [
     description:
       "A secure password manager to store, retrieve, and manage user credentials with encryption. Features a clean UI with form validation, smooth animations, and strong error handling.",
     technologies: ["React.js", "TailwindCSS", "JavaScript", "HTML", "CSS"],
+    link: "https://passopm.netlify.app/",
   },
   // {
   //   title: "Analog Clock Extension",

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { PROJECTS } from "../constants";
+import { FiExternalLink } from "react-icons/fi";
 
 function Projects() {
   return (
@@ -39,8 +40,22 @@ function Projects() {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className=" font-semibold mb-2">{project.title}</h6>
+              <div className="flex items-center mb-2 flex-wrap gap-2">
+                <h6 className="font-semibold">{project.title}</h6>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1 rounded-md text-white text-xs sm:text-sm  transition flex items-center gap-1"
+                  >
+                    <FiExternalLink size={14} />
+                  </a>
+                )}
+              </div>
+
               <p className="mb-4 text-neutral-400">{project.description}</p>
+
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
